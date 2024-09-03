@@ -1,0 +1,464 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/main"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.google.android.material.appbar.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fitsSystemWindows="true"
+                    android:background="?actionBarItemBackground"
+                    app:liftOnScroll="true">
+                    <com.google.android.material.appbar.CollapsingToolbarLayout
+                        android:layout_width="match_parent"
+                        style="?attr/collapsingToolbarLayoutLargeStyle"
+                        app:expandedTitleMarginStart="72dp"
+                        app:expandedTitleTextColor="@color/black"
+                        app:collapsedTitleTextColor="@color/black"
+                        android:id="@+id/collapsingToolbarLayout"
+                        app:expandedTitleMarginBottom="28dp"
+                        android:layout_height="?attr/collapsingToolbarLayoutLargeSize"
+                        app:layout_scrollFlags="scroll|exitUntilCollapsed">
+                        <com.google.android.material.appbar.MaterialToolbar
+                            app:titleCentered="true"
+                            android:elevation="0dp"
+                            android:id="@+id/topAppBar"
+                            app:layout_collapseMode="pin"
+                            app:layout_scrollEffect="compress"
+                            app:titleTextColor="@color/white"
+                            android:layout_width="match_parent"
+                            android:layout_height="?attr/actionBarSize"
+                            app:title="Home"/>
+                    </com.google.android.material.appbar.CollapsingToolbarLayout>
+                </com.google.android.material.appbar.AppBarLayout>
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+                </androidx.core.widget.NestedScrollView>
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="4dp"
+    android:orientation="horizontal">
+    <androidx.cardview.widget.CardView
+        android:layout_marginRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="7dp"
+        app:cardPreventCornerOverlap="false">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/youtubeThubnail1"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/frutorials" />
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/title1"
+                android:layout_width="110dp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/youtubeThubnail1"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="text text"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/youtubeThubnail1"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="-40dp"
+                android:src="@android:drawable/ic_media_play" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="7dp"
+        app:cardPreventCornerOverlap="false">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/youtubeThubnail12"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/frutorials" />
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/title12"
+                android:layout_width="110dp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/youtubeThubnail12"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="text text"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/youtubeThubnail12"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="-40dp"
+                android:src="@android:drawable/ic_media_play" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="7dp"
+        app:cardPreventCornerOverlap="false">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/youtubeThubnail13"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/frutorials" />
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/title13"
+                android:layout_width="110dp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/youtubeThubnail13"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="text text"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/youtubeThubnail13"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="-40dp"
+                android:src="@android:drawable/ic_media_play" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:orientation="horizontal">
+                <androidx.cardview.widget.CardView
+                    android:layout_marginRight="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="7dp"
+                    app:cardPreventCornerOverlap="false">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/youtubeThubnail1w"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/frutorials" />
+
+                        <TextView
+                            android:gravity="center"
+                            android:id="@+id/title1w"
+                            android:layout_width="110dp"
+                            android:textColor="@color/black"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/youtubeThubnail1w"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="text text"
+                            android:textSize="20dp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/youtubeThubnail1w"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginTop="-40dp"
+                            android:src="@android:drawable/ic_media_play" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="7dp"
+                    app:cardPreventCornerOverlap="false">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/youtubeThubnail12e"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/frutorials" />
+
+                        <TextView
+                            android:gravity="center"
+                            android:id="@+id/title12e"
+                            android:layout_width="110dp"
+                            android:textColor="@color/black"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/youtubeThubnail12e"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="text text"
+                            android:textSize="20dp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/youtubeThubnail12e"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginTop="-40dp"
+                            android:src="@android:drawable/ic_media_play" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="7dp"
+                    app:cardPreventCornerOverlap="false">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/youtubeThubnail13r"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/frutorials" />
+
+                        <TextView
+                            android:gravity="center"
+                            android:id="@+id/title13r"
+                            android:layout_width="110dp"
+                            android:textColor="@color/black"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/youtubeThubnail13r"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="text text"
+                            android:textSize="20dp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/youtubeThubnail13r"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginTop="-40dp"
+                            android:src="@android:drawable/ic_media_play" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:orientation="horizontal">
+                <androidx.cardview.widget.CardView
+                    android:layout_marginRight="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="7dp"
+                    app:cardPreventCornerOverlap="false">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/youtubeThubnail1t"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/frutorials" />
+
+                        <TextView
+                            android:gravity="center"
+                            android:id="@+id/title1t"
+                            android:layout_width="110dp"
+                            android:textColor="@color/black"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/youtubeThubnail1t"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="text text"
+                            android:textSize="20dp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/youtubeThubnail1t"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginTop="-40dp"
+                            android:src="@android:drawable/ic_media_play" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="7dp"
+                    app:cardPreventCornerOverlap="false">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/youtubeThubnail12y"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/frutorials" />
+
+                        <TextView
+                            android:gravity="center"
+                            android:id="@+id/title12y"
+                            android:layout_width="110dp"
+                            android:textColor="@color/black"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/youtubeThubnail12y"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="text text"
+                            android:textSize="20dp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/youtubeThubnail12y"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginTop="-40dp"
+                            android:src="@android:drawable/ic_media_play" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="7dp"
+                    app:cardPreventCornerOverlap="false">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/youtubeThubnail13y"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/frutorials" />
+
+                        <TextView
+                            android:gravity="center"
+                            android:id="@+id/title13y"
+                            android:layout_width="110dp"
+                            android:textColor="@color/black"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/youtubeThubnail13y"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="text text"
+                            android:textSize="20dp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/youtubeThubnail13y"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginTop="-40dp"
+                            android:src="@android:drawable/ic_media_play" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

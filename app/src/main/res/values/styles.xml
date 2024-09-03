@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <!-- Customizations for the TextInputLayout when it's idle -->
+        <item name="boxStrokeColor">#5F4A8C</item>
+        <item name="boxStrokeWidth">3dp</item>
+        <item name="hintTextColor">#5F4A8C</item>
+        <item name="android:textColorHint">#5F4A8C</item>
+        <!--        <item name="boxBackgroundColor">#5F4A8C</item>-->
+    </style>
+
+    <style name="CustomTextInputLayout2" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <!-- Customizations for the TextInputLayout when it's idle -->
+        <item name="boxStrokeColor">#F2D0ED</item>
+        <item name="boxStrokeWidth">3dp</item>
+        <item name="hintTextColor">#F2D0ED</item>
+        <item name="android:textColorHint">#F2D0ED</item>
+        <!--        <item name="boxBackgroundColor">#5F4A8C</item>-->
+    </style>
+
+</resources>
